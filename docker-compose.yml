@@ -14,9 +14,6 @@ services:
         - DOMAIN=${DOMAIN:-requestrepo.com}
     container_name: requestrepo_backend
     restart: always
-    ports:
-      - 80:80
-      - 443:443
     env_file:
       - .env
     environment:
