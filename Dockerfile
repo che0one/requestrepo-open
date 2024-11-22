@@ -34,12 +34,8 @@ RUN chmod 755 /app/start.sh
 
 RUN useradd -ms /bin/bash app
 
-RUN chmod 777 /app/cert/fullchain.pem
-RUN chmod 777 /app/cert/privkey.pem
-
 USER app
 
 EXPOSE 80
-EXPOSE 443
 
 CMD ["/app/start.sh"]
